@@ -1,0 +1,26 @@
+# 환경변수 (절대 커밋 금지)
+.env.local
+.env*.local
+
+# 크롤링 캐시
+bob-seller-web/data/comparison-cache.json
+
+# Next.js
+bob-seller-web/.next/
+bob-seller-web/out/
+
+# Node
+node_modules/
+bob-seller-web/node_modules/
+
+# Cloudflare
+.wrangler/
+bob-seller-web/.wrangler/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build outputs
+bob-seller-web/.vercel/
+bob-seller-web/.open-next/
