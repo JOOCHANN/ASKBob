@@ -4,12 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "cf-build": "next build && npx opennextjs-cloudflare build",
+    "build": "next build && npx opennextjs-cloudflare build --skip-next-build",
     "start": "next start",
-    "lint": "eslint",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
+    "lint": "eslint"
   },
   "dependencies": {
     "@carbon/icons-react": "^11.82.0",
