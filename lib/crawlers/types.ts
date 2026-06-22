@@ -9,7 +9,7 @@ export interface PricingPlan {
 export interface CrawlTarget {
   product: string; // 표시용 제품명 (Snapshot.product 와 동일)
   slug: string; // 파일 경로용 슬러그 (data/raw/<slug>, data/snapshots/<slug>)
-  sourceUrl: string;
+  sourceUrls: string[]; // 가격/기능 등 여러 공식 페이지. 모두 크롤해 합쳐서 추출한다.
 }
 
 /**

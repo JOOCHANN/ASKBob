@@ -11,11 +11,11 @@ async function readJson<T>(file: string, fallback: T): Promise<T> {
   }
 }
 
-/** Layer 1: 크롤 원본 HTML 저장 (불변) */
-export async function saveRaw(slug: string, date: string, html: string): Promise<void> {
+/** Layer 1: 크롤 원본 HTML 저장 (불변). name 은 보통 날짜, 다중 URL이면 `날짜-n` */
+export async function saveRaw(slug: string, name: string, html: string): Promise<void> {
   const dir = path.join(RAW_DIR, slug);
   await fs.mkdir(dir, { recursive: true });
-  await fs.writeFile(path.join(dir, `${date}.html`), html, "utf8");
+  await fs.writeFile(path.join(dir, `${name}.html`), html, "utf8");
 }
 
 /** Layer 2+3: 스냅샷 저장 (불변, 파일명 = collectedAt) */
