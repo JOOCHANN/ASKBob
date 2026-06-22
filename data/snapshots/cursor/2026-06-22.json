@@ -1,0 +1,84 @@
+{
+  "product": "Cursor",
+  "collectedAt": "2026-06-22",
+  "sourceUrl": "https://cursor.com/pricing",
+  "version": "latest",
+  "pricing": [
+    {
+      "plan": "Hobby",
+      "price": "Free",
+      "unit": "",
+      "features": [
+        "No credit card required",
+        "Limited Agent requests",
+        "Limited Tab completions"
+      ]
+    },
+    {
+      "plan": "Individual",
+      "price": "20",
+      "unit": "user/month",
+      "features": [
+        "Everything in Hobby",
+        "Extended limits on Agent",
+        "Access to frontier models",
+        "MCPs, skills, and hooks",
+        "Cloud agents",
+        "Bugbot on usage-based billing"
+      ]
+    },
+    {
+      "plan": "Pro Teams",
+      "price": "40",
+      "unit": "user/month",
+      "features": [
+        "Everything on Individual",
+        "Centralized team billing and administration",
+        "Team marketplace for internal rules, skills, and plugins",
+        "Agentic code reviews with Bugbot",
+        "Cloud agents and automations with shared team context",
+        "Usage analytics to understand team behavior",
+        "Team-wide privacy mode",
+        "SAML/OIDC SSO"
+      ]
+    },
+    {
+      "plan": "Enterprise",
+      "price": "Custom",
+      "unit": "",
+      "features": [
+        "Everything on Teams",
+        "Pooled usage",
+        "Invoice/PO billing",
+        "SCIM seat management",
+        "Repository, model, and MCP access controls",
+        "Auto-run, browser, and network controls",
+        "Audit logs and service accounts",
+        "AI code tracking API",
+        "Priority support and account management"
+      ]
+    }
+  ],
+  "features": [
+    "에이전트를 통한 코드 생성 및 개발 지원",
+    "AI 기반 코드 내비게이션",
+    "실시간 협업 가능",
+    "세분화된 사용 분석 도구",
+    "모델별 맞춤형 코드 완성",
+    "고급 보안 기능 지원",
+    "클라우드 환경에서의 자동화",
+    "온프레미스 배포 옵션"
+  ],
+  "models": [
+    "GPT-5.5",
+    "Opus 4.8",
+    "Gemini 3.1",
+    "Pro Grok 4.3"
+  ],
+  "supportedIDEs": [
+    "VSCode",
+    "JetBrains IDEs",
+    "Terminal",
+    "Slack"
+  ]
+}

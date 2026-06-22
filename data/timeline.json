@@ -1,6 +1,78 @@
 {
   "updatedAt": "2026-06-22",
   "products": {
+    "Claude Code": [
+      {
+        "product": "Claude Code",
+        "collectedAt": "2026-06-22",
+        "sourceUrl": "https://claude.com/product/claude-code",
+        "version": "latest",
+        "pricing": [
+          {
+            "plan": "Pro",
+            "price": "17",
+            "unit": "user/month",
+            "features": [
+              "Includes Claude Code",
+              "More usage than Free",
+              "Unlimited projects",
+              "Access to Research",
+              "Ability to use more Claude models"
+            ]
+          },
+          {
+            "plan": "Max 5x",
+            "price": "100",
+            "unit": "user/month",
+            "features": [
+              "Includes Claude Code",
+              "5x more usage than Pro",
+              "Higher output limits for all tasks",
+              "Early access to advanced Claude features"
+            ]
+          },
+          {
+            "plan": "Max 20x",
+            "price": "200",
+            "unit": "user/month",
+            "features": [
+              "Includes Claude Code",
+              "20x more usage than Pro",
+              "Higher output limits for all tasks",
+              "Priority access at high traffic times"
+            ]
+          },
+          {
+            "plan": "Free",
+            "price": "0",
+            "unit": "",
+            "features": [
+              "Chat on web, iOS, Android, desktop",
+              "Generate code and visualize data"
+            ]
+          }
+        ],
+        "features": [
+          "코드 베이스를 읽고 수정하며, 터미널에서 명령을 실행할 수 있는 자율 에이전트",
+          "직관적인 자연어 사용을 통한 빌드, 디버그 및 배포 지원",
+          "모든 CLI 도구 및 IDE와 통합 작동",
+          "GitHub, GitLab과 통합하여 PR 처리",
+          "멀티 파일 편집 및 코드베이스 이해를 통한 강력한 수정 가능"
+        ],
+        "models": [
+          "Fable",
+          "Opus",
+          "Sonnet",
+          "Haiku"
+        ],
+        "supportedIDEs": [
+          "VS Code",
+          "JetBrains",
+          "터미널",
+          "웹 브라우저"
+        ]
+      }
+    ],
     "OpenAI Codex": [
       {
         "product": "OpenAI Codex",
@@ -10,39 +82,39 @@
         "pricing": [
           {
             "plan": "Free",
-            "price": "0",
-            "unit": "month",
+            "price": "$0",
+            "unit": "user/month",
             "features": [
-              "Explore Codex capabilities on quick coding tasks."
+              "정의된 코딩 태스크에 대한 기본 기능"
             ]
           },
           {
             "plan": "Go",
-            "price": "8",
-            "unit": "month",
+            "price": "$8",
+            "unit": "user/month",
             "features": [
-              "Use Codex for lightweight coding tasks."
+              "경량 코딩 태스크 지원",
+              "CLI 및 IDE 확장 지원"
             ]
           },
           {
             "plan": "Plus",
-            "price": "20",
-            "unit": "month",
+            "price": "$20",
+            "unit": "user/month",
             "features": [
-              "Power a few focused coding sessions each week.",
-              "Access to Codex on the web, in the CLI, in the IDE extension, and on iOS.",
-              "Cloud-based integrations like automatic code review and Slack integration.",
-              "The latest models, including GPT-5.5, GPT-5.4, and GPT-5.4 mini."
+              "주간 집중 코딩 세션",
+              "자동 코드 리뷰",
+              "Slack 통합",
+              "최신 모델(GPT-5.5 등) 지원"
             ]
           },
           {
             "plan": "Pro",
-            "price": "From 100",
-            "unit": "month",
+            "price": "From $100",
+            "unit": "user/month",
             "features": [
-              "Choose 5x or 20x higher rate limits than Plus.",
-              "Access to GPT-5.3-Codex-Spark (research preview).",
-              "5x or 20x more Codex usage than Plus."
+              "일상적인 코딩 태스크에 적합한 빠른 Codex 모델(GPT-5.3-Codex-Spark) 접근",
+              "5배 또는 20배 더 높은 사용 한도"
             ]
           },
           {
@@ -50,8 +122,8 @@
             "price": "문의",
             "unit": "",
             "features": [
-              "Bring Codex into your startup or growing business.",
-              "Assign standard or usage-based Codex seats based on your team’s needs."
+              "팀 요구에 맞춘 Codex 시트 할당",
+              "기본 관리 제어 및 SAML SSO"
             ]
           },
           {
@@ -59,24 +131,27 @@
             "price": "문의",
             "unit": "",
             "features": [
-              "Unlock Codex for your entire organization with enterprise-grade functionality.",
-              "Priority request processing and enterprise-level security and controls."
+              "우선 요청 처리",
+              "SCIM, EKM, 도메인 인증 지원"
             ]
           }
         ],
         "features": [
-          "코드 생성 및 수정 지원",
-          "코드 리뷰 및 자동화 기능",
-          "CLI 및 IDE와 통합"
+          "코드 생성 및 텍스트 생성 기능",
+          "자동 코드 리뷰 및 승인 요청",
+          "Slack 및 GitHub 통합 기능",
+          "CLI 및 SDK를 통한 자동화",
+          "지속적인 워크플로우 관리 및 작업 자동화"
         ],
         "models": [
           "GPT-5.5",
           "GPT-5.4",
-          "GPT-5.4 mini",
-          "GPT-5.3-Codex-Spark (research preview)"
+          "GPT-5.3-Codex-Spark"
         ],
         "supportedIDEs": [
-          "IDE extension"
+          "CLI",
+          "IDE 확장",
+          "Web"
         ]
       }
     ],
@@ -93,8 +168,9 @@
             "unit": "user/month",
             "features": [
               "2,000 completions per month",
-              "Access to Haiku 4.5, GPT-5 mini, and more",
-              "Copilot CLI"
+              "Access to Haiku 4.5, GPT-5 mini",
+              "Copilot CLI",
+              "No credit card required"
             ]
           },
           {
@@ -102,9 +178,12 @@
             "price": "10",
             "unit": "user/month",
             "features": [
+              "Everything in Free",
               "Access to Cloud agent and code review",
               "Unlimited code completion and next edit suggestions",
-              "Access to 3rd party agents (Claude Code and Codex)"
+              "Access to 3rd party agents (Claude Code and Codex)",
+              "Model selection",
+              "$15 monthly total credits"
             ]
           },
           {
@@ -112,9 +191,11 @@
             "price": "39",
             "unit": "user/month",
             "features": [
-              "Access to premium models",
+              "Everything in Pro",
+              "Access to premium models, including Opus",
               "Audit logs",
-              "4x+ included usage than Pro"
+              "4x+ included usage than Pro",
+              "$70 monthly total credits"
             ]
           },
           {
@@ -122,39 +203,187 @@
             "price": "100",
             "unit": "user/month",
             "features": [
+              "Everything in Pro+",
               "Priority access to new models and features",
-              "2.9x+ included usage than Pro+"
+              "2.9x+ included usage than Pro+",
+              "$200 monthly total credits"
             ]
           }
         ],
         "features": [
-          "AI 비서로서 코드 자동완성 및 코드 리뷰 기능",
-          "다양한 모델 지원",
-          "IDE와의 통합 지원"
+          "자동 완성이 포함된 코드 추천 기능",
+          "코드 리뷰 및 수정 제안 기능",
+          "다양한 IDE 통합 지원 (VS Code, Visual Studio 등)",
+          "모델 선택 및 외부 도구와의 통합",
+          "조직 단위의 라이선스 및 정책 관리 기능",
+          "프리미엄 모델 접근 및 높은 사용량 처리 지원"
         ],
         "models": [
-          "GPT-5 mini",
-          "Claude Code",
-          "Codex",
-          "Opus",
-          "Claude Fable 5"
+          "Anthropic Claude Fable 5",
+          "Anthropic Claude Haiku 4.5",
+          "OpenAI GPT-5 mini",
+          "Google Gemini 3.5 Flash"
         ],
         "supportedIDEs": [
+          "GitHub",
           "Visual Studio Code",
           "Visual Studio",
           "JetBrains IDEs",
+          "Xcode",
           "Neovim",
           "Eclipse",
-          "Xcode"
+          "SQL Server Management Studio",
+          "GitHub CLI"
+        ]
+      }
+    ],
+    "Cursor": [
+      {
+        "product": "Cursor",
+        "collectedAt": "2026-06-22",
+        "sourceUrl": "https://cursor.com/pricing",
+        "version": "latest",
+        "pricing": [
+          {
+            "plan": "Hobby",
+            "price": "Free",
+            "unit": "",
+            "features": [
+              "No credit card required",
+              "Limited Agent requests",
+              "Limited Tab completions"
+            ]
+          },
+          {
+            "plan": "Individual",
+            "price": "20",
+            "unit": "user/month",
+            "features": [
+              "Everything in Hobby",
+              "Extended limits on Agent",
+              "Access to frontier models",
+              "MCPs, skills, and hooks",
+              "Cloud agents",
+              "Bugbot on usage-based billing"
+            ]
+          },
+          {
+            "plan": "Pro Teams",
+            "price": "40",
+            "unit": "user/month",
+            "features": [
+              "Everything on Individual",
+              "Centralized team billing and administration",
+              "Team marketplace for internal rules, skills, and plugins",
+              "Agentic code reviews with Bugbot",
+              "Cloud agents and automations with shared team context",
+              "Usage analytics to understand team behavior",
+              "Team-wide privacy mode",
+              "SAML/OIDC SSO"
+            ]
+          },
+          {
+            "plan": "Enterprise",
+            "price": "Custom",
+            "unit": "",
+            "features": [
+              "Everything on Teams",
+              "Pooled usage",
+              "Invoice/PO billing",
+              "SCIM seat management",
+              "Repository, model, and MCP access controls",
+              "Auto-run, browser, and network controls",
+              "Audit logs and service accounts",
+              "AI code tracking API",
+              "Priority support and account management"
+            ]
+          }
+        ],
+        "features": [
+          "에이전트를 통한 코드 생성 및 개발 지원",
+          "AI 기반 코드 내비게이션",
+          "실시간 협업 가능",
+          "세분화된 사용 분석 도구",
+          "모델별 맞춤형 코드 완성",
+          "고급 보안 기능 지원",
+          "클라우드 환경에서의 자동화",
+          "온프레미스 배포 옵션"
+        ],
+        "models": [
+          "GPT-5.5",
+          "Opus 4.8",
+          "Gemini 3.1",
+          "Pro Grok 4.3"
+        ],
+        "supportedIDEs": [
+          "VSCode",
+          "JetBrains IDEs",
+          "Terminal",
+          "Slack"
         ]
       }
     ],
     "IBM Bob": [
       {
         "product": "IBM Bob",
-        "version": "latest",
+        "collectedAt": "2026-06-22",
         "sourceUrl": "https://www.ibm.com/products/watsonx-code-assistant",
-        "collectedAt": "2025-06-22",
+        "version": "latest",
+        "pricing": [
+          {
+            "plan": "Pro",
+            "price": "20.00",
+            "unit": "USD per instance",
+            "features": [
+              "AI-assisted coding with intelligent suggestions",
+              "Real-time completions",
+              "Context-aware assistance",
+              "40 Bobcoins Monthly/Annual",
+              "Agentic Modes including Bob-Shell and Enhanced Security"
+            ]
+          },
+          {
+            "plan": "Pro+",
+            "price": "60.00",
+            "unit": "USD per instance",
+            "features": [
+              "Streamline repetitive tasks",
+              "Automated code reviews",
+              "Proactive insights",
+              "160 Bobcoins Monthly/Annual",
+              "Same features as Pro"
+            ]
+          },
+          {
+            "plan": "Ultra",
+            "price": "200.00",
+            "unit": "USD per instance",
+            "features": [
+              "Powerful capabilities for large codebases",
+              "Improved navigation of complicated architectures",
+              "500 Bobcoins Monthly/Annual",
+              "Same features as Pro"
+            ]
+          },
+          {
+            "plan": "Enterprise",
+            "price": "문의",
+            "unit": "Custom Annual",
+            "features": [
+              "Tailored solutions with dedicated support",
+              "Advanced security",
+              "Enterprise-grade infrastructure",
+              "Same features as Pro"
+            ]
+          }
+        ],
+        "features": [
+          "복잡한 코드를 신속하게 분석하고 이해할 수 있는 기능",
+          "AI 기반 자동화로 개발 주기 전반에 걸쳐 엔지니어링 생산성 향상",
+          "AI가 코드 작성 중 실시간으로 취약점을 감지하는 보안 기능",
+          "자동화된 테스트 작성 및 품질 보증 프로세스 지원",
+          "다양한 개발 모드 제공으로 복잡한 작업을 효율적으로 관리"
+        ],
         "models": [
           "IBM Granite Code",
           "watsonx 기반 모델"
@@ -165,55 +394,6 @@
           "Eclipse",
           "Visual Studio",
           "JetBrains IDEs"
-        ],
-        "features": [
-          "AI 기반 코드 자동완성",
-          "자연어로 코드 생성",
-          "코드 설명 및 문서화",
-          "코드 리뷰 및 개선 제안",
-          "단위 테스트 자동 생성",
-          "취약점 탐지 및 보안 코드 제안",
-          "엔터프라이즈 보안 (SOC2, ISO 27001)",
-          "온프레미스 배포 지원",
-          "IBM watsonx 생태계 통합",
-          "커스텀 모델 파인튜닝",
-          "GDPR / HIPAA 컴플라이언스",
-          "전담 엔터프라이즈 지원 (SLA 보장)",
-          "코드 출처 추적 (IP 보호)",
-          "다국어 지원 (60개 이상 프로그래밍 언어)"
-        ],
-        "pricing": [
-          {
-            "plan": "Free Trial",
-            "price": "0",
-            "unit": "month",
-            "features": [
-              "기본 코드 자동완성",
-              "30일 체험"
-            ]
-          },
-          {
-            "plan": "Standard",
-            "price": "문의",
-            "unit": "user/month",
-            "features": [
-              "모든 AI 기능",
-              "엔터프라이즈 보안",
-              "기술 지원"
-            ]
-          },
-          {
-            "plan": "Enterprise",
-            "price": "문의",
-            "unit": "user/month",
-            "features": [
-              "온프레미스 배포",
-              "커스텀 모델",
-              "전담 지원",
-              "SLA 보장",
-              "컴플라이언스 패키지"
-            ]
-          }
         ]
       }
     ]

@@ -6,39 +6,39 @@
   "pricing": [
     {
       "plan": "Free",
-      "price": "0",
-      "unit": "month",
+      "price": "$0",
+      "unit": "user/month",
       "features": [
-        "Explore Codex capabilities on quick coding tasks."
+        "정의된 코딩 태스크에 대한 기본 기능"
       ]
     },
     {
       "plan": "Go",
-      "price": "8",
-      "unit": "month",
+      "price": "$8",
+      "unit": "user/month",
       "features": [
-        "Use Codex for lightweight coding tasks."
+        "경량 코딩 태스크 지원",
+        "CLI 및 IDE 확장 지원"
       ]
     },
     {
       "plan": "Plus",
-      "price": "20",
-      "unit": "month",
+      "price": "$20",
+      "unit": "user/month",
       "features": [
-        "Power a few focused coding sessions each week.",
-        "Access to Codex on the web, in the CLI, in the IDE extension, and on iOS.",
-        "Cloud-based integrations like automatic code review and Slack integration.",
-        "The latest models, including GPT-5.5, GPT-5.4, and GPT-5.4 mini."
+        "주간 집중 코딩 세션",
+        "자동 코드 리뷰",
+        "Slack 통합",
+        "최신 모델(GPT-5.5 등) 지원"
       ]
     },
     {
       "plan": "Pro",
-      "price": "From 100",
-      "unit": "month",
+      "price": "From $100",
+      "unit": "user/month",
       "features": [
-        "Choose 5x or 20x higher rate limits than Plus.",
-        "Access to GPT-5.3-Codex-Spark (research preview).",
-        "5x or 20x more Codex usage than Plus."
+        "일상적인 코딩 태스크에 적합한 빠른 Codex 모델(GPT-5.3-Codex-Spark) 접근",
+        "5배 또는 20배 더 높은 사용 한도"
       ]
     },
     {
@@ -46,8 +46,8 @@
       "price": "문의",
       "unit": "",
       "features": [
-        "Bring Codex into your startup or growing business.",
-        "Assign standard or usage-based Codex seats based on your team’s needs."
+        "팀 요구에 맞춘 Codex 시트 할당",
+        "기본 관리 제어 및 SAML SSO"
       ]
     },
     {
@@ -55,23 +55,26 @@
       "price": "문의",
       "unit": "",
       "features": [
-        "Unlock Codex for your entire organization with enterprise-grade functionality.",
-        "Priority request processing and enterprise-level security and controls."
+        "우선 요청 처리",
+        "SCIM, EKM, 도메인 인증 지원"
       ]
     }
   ],
   "features": [
-    "코드 생성 및 수정 지원",
-    "코드 리뷰 및 자동화 기능",
-    "CLI 및 IDE와 통합"
+    "코드 생성 및 텍스트 생성 기능",
+    "자동 코드 리뷰 및 승인 요청",
+    "Slack 및 GitHub 통합 기능",
+    "CLI 및 SDK를 통한 자동화",
+    "지속적인 워크플로우 관리 및 작업 자동화"
   ],
   "models": [
     "GPT-5.5",
     "GPT-5.4",
-    "GPT-5.4 mini",
-    "GPT-5.3-Codex-Spark (research preview)"
+    "GPT-5.3-Codex-Spark"
   ],
   "supportedIDEs": [
-    "IDE extension"
+    "CLI",
+    "IDE 확장",
+    "Web"
   ]
 }

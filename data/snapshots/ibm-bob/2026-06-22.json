@@ -1,0 +1,72 @@
+{
+  "product": "IBM Bob",
+  "collectedAt": "2026-06-22",
+  "sourceUrl": "https://www.ibm.com/products/watsonx-code-assistant",
+  "version": "latest",
+  "pricing": [
+    {
+      "plan": "Pro",
+      "price": "20.00",
+      "unit": "USD per instance",
+      "features": [
+        "AI-assisted coding with intelligent suggestions",
+        "Real-time completions",
+        "Context-aware assistance",
+        "40 Bobcoins Monthly/Annual",
+        "Agentic Modes including Bob-Shell and Enhanced Security"
+      ]
+    },
+    {
+      "plan": "Pro+",
+      "price": "60.00",
+      "unit": "USD per instance",
+      "features": [
+        "Streamline repetitive tasks",
+        "Automated code reviews",
+        "Proactive insights",
+        "160 Bobcoins Monthly/Annual",
+        "Same features as Pro"
+      ]
+    },
+    {
+      "plan": "Ultra",
+      "price": "200.00",
+      "unit": "USD per instance",
+      "features": [
+        "Powerful capabilities for large codebases",
+        "Improved navigation of complicated architectures",
+        "500 Bobcoins Monthly/Annual",
+        "Same features as Pro"
+      ]
+    },
+    {
+      "plan": "Enterprise",
+      "price": "문의",
+      "unit": "Custom Annual",
+      "features": [
+        "Tailored solutions with dedicated support",
+        "Advanced security",
+        "Enterprise-grade infrastructure",
+        "Same features as Pro"
+      ]
+    }
+  ],
+  "features": [
+    "복잡한 코드를 신속하게 분석하고 이해할 수 있는 기능",
+    "AI 기반 자동화로 개발 주기 전반에 걸쳐 엔지니어링 생산성 향상",
+    "AI가 코드 작성 중 실시간으로 취약점을 감지하는 보안 기능",
+    "자동화된 테스트 작성 및 품질 보증 프로세스 지원",
+    "다양한 개발 모드 제공으로 복잡한 작업을 효율적으로 관리"
+  ],
+  "models": [
+    "IBM Granite Code",
+    "watsonx 기반 모델"
+  ],
+  "supportedIDEs": [
+    "VS Code",
+    "IntelliJ IDEA",
+    "Eclipse",
+    "Visual Studio",
+    "JetBrains IDEs"
+  ]
+}

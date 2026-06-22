@@ -10,8 +10,9 @@
       "unit": "user/month",
       "features": [
         "2,000 completions per month",
-        "Access to Haiku 4.5, GPT-5 mini, and more",
-        "Copilot CLI"
+        "Access to Haiku 4.5, GPT-5 mini",
+        "Copilot CLI",
+        "No credit card required"
       ]
     },
     {
@@ -19,9 +20,12 @@
       "price": "10",
       "unit": "user/month",
       "features": [
+        "Everything in Free",
         "Access to Cloud agent and code review",
         "Unlimited code completion and next edit suggestions",
-        "Access to 3rd party agents (Claude Code and Codex)"
+        "Access to 3rd party agents (Claude Code and Codex)",
+        "Model selection",
+        "$15 monthly total credits"
       ]
     },
     {
@@ -29,9 +33,11 @@
       "price": "39",
       "unit": "user/month",
       "features": [
-        "Access to premium models",
+        "Everything in Pro",
+        "Access to premium models, including Opus",
         "Audit logs",
-        "4x+ included usage than Pro"
+        "4x+ included usage than Pro",
+        "$70 monthly total credits"
       ]
     },
     {
@@ -39,29 +45,36 @@
       "price": "100",
       "unit": "user/month",
       "features": [
+        "Everything in Pro+",
         "Priority access to new models and features",
-        "2.9x+ included usage than Pro+"
+        "2.9x+ included usage than Pro+",
+        "$200 monthly total credits"
       ]
     }
   ],
   "features": [
-    "AI 비서로서 코드 자동완성 및 코드 리뷰 기능",
-    "다양한 모델 지원",
-    "IDE와의 통합 지원"
+    "자동 완성이 포함된 코드 추천 기능",
+    "코드 리뷰 및 수정 제안 기능",
+    "다양한 IDE 통합 지원 (VS Code, Visual Studio 등)",
+    "모델 선택 및 외부 도구와의 통합",
+    "조직 단위의 라이선스 및 정책 관리 기능",
+    "프리미엄 모델 접근 및 높은 사용량 처리 지원"
   ],
   "models": [
-    "GPT-5 mini",
-    "Claude Code",
-    "Codex",
-    "Opus",
-    "Claude Fable 5"
+    "Anthropic Claude Fable 5",
+    "Anthropic Claude Haiku 4.5",
+    "OpenAI GPT-5 mini",
+    "Google Gemini 3.5 Flash"
   ],
   "supportedIDEs": [
+    "GitHub",
     "Visual Studio Code",
     "Visual Studio",
     "JetBrains IDEs",
+    "Xcode",
     "Neovim",
     "Eclipse",
-    "Xcode"
+    "SQL Server Management Studio",
+    "GitHub CLI"
   ]
 }
