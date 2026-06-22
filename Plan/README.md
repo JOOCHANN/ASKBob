@@ -21,7 +21,7 @@ IBM Bob 테크 셀러를 위한 웹 애플리케이션.
 ## 앱 폴더 구조
 
 ```
-bob-seller-web/
+ASKBob/                           ← 저장소 루트 = 앱 루트
   app/
     page.tsx                      ← 메인 대시보드
     chat/page.tsx                 ← 챗봇 페이지
@@ -47,6 +47,8 @@ bob-seller-web/
   data/
     bob-static.json               ← Bob 정적 데이터 (수동 관리)
     comparison-cache.json         ← 크롤링 캐시 (gitignore)
+  Plan/                           ← 개발 플랜 문서
+  package.json
   .env.local.example
 ```
 
