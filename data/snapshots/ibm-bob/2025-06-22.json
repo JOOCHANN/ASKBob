@@ -1,0 +1,20 @@
+{
+  "product": "IBM Bob",
+  "collectedAt": "2025-06-22",
+  "version": "latest",
+  "sourceUrl": "https://www.ibm.com/products/watsonx-code-assistant",
+  "models": ["IBM Granite Code", "watsonx 기반 모델"],
+  "supportedIDEs": ["VS Code", "IntelliJ IDEA", "Eclipse", "Visual Studio", "JetBrains IDEs"],
+  "features": [
+    "AI 기반 코드 자동완성",
+    "자연어로 코드 생성",
+    "엔터프라이즈 보안 (SOC2, ISO 27001)",
+    "온프레미스 배포 지원",
+    "IBM watsonx 생태계 통합"
+  ],
+  "pricing": [
+    { "plan": "Free Trial", "price": "0", "unit": "month", "features": ["기본 코드 자동완성", "30일 체험"] },
+    { "plan": "Standard", "price": "문의", "unit": "user/month", "features": ["모든 AI 기능", "엔터프라이즈 보안"] },
+    { "plan": "Enterprise", "price": "문의", "unit": "user/month", "features": ["온프레미스 배포", "커스텀 모델", "SLA 보장"] }
+  ]
+}

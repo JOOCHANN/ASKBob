@@ -1,8 +1,9 @@
 {
-  "name": "IBM Bob",
+  "product": "IBM Bob",
   "version": "latest",
   "sourceUrl": "https://www.ibm.com/products/watsonx-code-assistant",
-  "lastUpdated": "2025-06-22",
+  "collectedAt": "2025-06-22",
+  "models": ["IBM Granite Code", "watsonx 기반 모델"],
   "supportedIDEs": ["VS Code", "IntelliJ IDEA", "Eclipse", "Visual Studio", "JetBrains IDEs"],
   "features": [
     "AI 기반 코드 자동완성",

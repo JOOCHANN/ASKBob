@@ -1,55 +1,57 @@
-# Step 7 — Cloudflare 배포 설정 및 최종 검증
+# Step 7 — GitHub Actions 주간 cron + Cloudflare 배포·검증
 
 **Status**: ⏳ 대기
 
 ## Intent
 
-Cloudflare Pages에 GitHub 연동 자동배포를 설정하고 전체 기능을 검증한다.
-Cloudflare KV로 크롤링 캐시를 영구 저장한다.
+수집 파이프라인을 주간 자동 실행하고, 결과 커밋이 Cloudflare 자동배포를 트리거하도록 연결한다.
+구 KV 캐시 의존을 제거하고 전체 흐름을 검증한다.
 
 ## Expected Outcomes
 
-- GitHub `main` 브랜치 push → Cloudflare Pages 자동 빌드/배포
-- Cloudflare 환경변수 설정 가이드 문서화
-- 크롤링, 챗봇, 비교 테이블 배포 환경에서 정상 작동
-- README.md 배포 절차 업데이트
+- `.github/workflows/crawl.yml` — 주간 cron + 수동 트리거(`workflow_dispatch`)
+- 파이프라인 실행 → `data/` 변경 시 자동 commit & push → Cloudflare 재배포
+- 챗봇용 `OPENAI_API_KEY`만 Cloudflare 환경변수로
+- 비교/타임라인/체인지로그/챗봇 배포 환경 정상 작동
 
 ## Todo List
 
-- [ ] Cloudflare Pages 대시보드에서 GitHub 저장소 연결
-- [ ] 빌드 설정 입력 (아래 Relevant Context 참조)
-- [ ] Cloudflare 환경변수 `OPENAI_API_KEY` 등록
-- [ ] Cloudflare KV 네임스페이스 생성 + `data-store.ts` 연결
+- [ ] `.github/workflows/crawl.yml` — `schedule`(weekly) + `workflow_dispatch`, Playwright 설치, `npm run pipeline`, `data/` 변경 자동 커밋
+- [ ] GitHub Secrets에 `OPENAI_API_KEY` 등록 (파이프라인용)
+- [ ] Cloudflare 환경변수 `OPENAI_API_KEY` 등록 (챗봇용)
+- [ ] 구 KV 흔적 정리 확인 (`COMPARISON_CACHE` 바인딩 없음)
+- [ ] `workflow_dispatch` 수동 실행 → 커밋 생성 → 자동배포 확인
 - [ ] 배포 후 전체 기능 테스트
 
 ## Relevant Context
 
-### Cloudflare Pages 빌드 설정
-| 항목 | 값 |
-|------|-----|
-| Framework preset | Next.js |
-| Root directory | `bob-seller-web` |
-| Build command | `npm run build` |
-| Build output directory | `.next` |
-| NODE_VERSION (환경변수) | `18` |
-
-### Cloudflare KV 설정
-```bash
-npx wrangler kv:namespace create "COMPARISON_CACHE"
-# 출력된 id를 wrangler.toml [[kv_namespaces]] id에 입력
+### crawl.yml 골자
+```yaml
+on:
+  schedule:
+    - cron: "0 0 * * 1"   # 매주 월요일 00:00 UTC
+  workflow_dispatch:
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run pipeline
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      - name: commit data
+        run: |
+          git config user.name "askbob-bot"
+          git config user.email "bot@askbob"
+          git add data/
+          git diff --cached --quiet || git commit -m "chore: weekly snapshot $(date +%F)"
+          git push
 ```
 
-### wrangler.toml 예시
-```toml
-name = "bob-seller-web"
-compatibility_date = "2024-01-01"
-compatibility_flags = ["nodejs_compat"]
-
-[[kv_namespaces]]
-binding = "COMPARISON_CACHE"
-id = "<여기에_KV_네임스페이스_ID_입력>"
-```
-
-### 환경변수 등록 위치
-Cloudflare Pages 대시보드 → Settings → Environment Variables
-- `OPENAI_API_KEY`: OpenAI API Key
+### Cloudflare
+- 빌드: `npm run build` (opennextjs-cloudflare), 출력 `.open-next`
+- `wrangler.jsonc`에 KV 바인딩 없음 — 앱은 `data/*.json` 정적 import 만 사용
+- `data/` 커밋 → GitHub 연동 자동배포로 새 통합본 번들

@@ -1,41 +1,30 @@
-# Step 2 — Bob 정적 데이터 및 크롤러 기반 구조
+# Step 2 — 데이터 모델 & 4계층 저장 레이아웃
 
-**Status**: ⏳ 대기
+**Status**: ✅ 완료
 
 ## Intent
 
-IBM Bob의 기능/가격 데이터를 JSON으로 정의하고, 4개 경쟁사 크롤러의 공통 인터페이스와 데이터 구조를 설계한다.
-UI 컴포넌트가 일관된 형태로 데이터를 소비할 수 있도록 타입을 표준화한다.
+"모든 것은 시점의 스냅샷이며 절대 덮어쓰지 않는다"를 구현할 데이터 모델과 저장 레이아웃을 정의한다.
+기존 단일 가변 캐시(`comparison-cache`) 구조를 폐기하고, 불변 시계열 스냅샷 + 원본 보존 + 변경 이력 구조로 전환한다.
 
 ## Expected Outcomes
 
-- `data/bob-static.json` — Bob 기능 목록, 가격 플랜, 지원 IDE, 보안 특징
-- `lib/crawlers/types.ts` — 공통 `ProductData` 타입
-- 크롤러 4개 스텁 (`copilot.ts`, `claude-code.ts`, `codex.ts`, `cursor.ts`)
-- `lib/data-store.ts` — save / load / diff 함수
-- `lib/bob-knowledge.ts` — 챗봇 시스템 프롬프트용 Bob 지식 텍스트
+- `Snapshot` / `ChangeRecord` / `Timeline` / `CrawlTarget` 타입 정의
+- `data/` 4계층 레이아웃 확정 (raw / snapshots / timeline / changes)
+- `bob-static.json`을 새 스냅샷 스키마(`product`, `collectedAt`, `models`)에 맞춤
+- 앱은 통합본만 read (쓰기·KV 없음)
 
 ## Todo List
 
-- [ ] `lib/crawlers/types.ts` — `ProductData`, `PricingPlan`, `Diff` 타입 정의
-- [ ] `data/bob-static.json` — Bob 현재 기능/가격 입력
-- [ ] 크롤러 4개 스텁 생성 (`fetchProductData(): Promise<ProductData>` 인터페이스)
-- [ ] `lib/data-store.ts` — save / load / diff 구현
-- [ ] `lib/bob-knowledge.ts` — Bob 셀링 포인트 텍스트 정리
+- [x] [lib/crawlers/types.ts](../lib/crawlers/types.ts)에 `Snapshot`/`ChangeRecord`/`Timeline`/`CrawlTarget` 추가, 구 `ProductData` 폐기
+- [x] 4개 크롤러 파일을 `CrawlTarget` 디스크립터로 재작성 (fetch 스텁 + `as unknown` 해킹 제거)
+- [x] [lib/data-store.ts](../lib/data-store.ts) — KV/쓰기/diff 제거, `loadTimeline`/`getLatestSnapshots`/`loadChanges` read 함수로 교체
+- [x] `data/{timeline.json, changes.json}` 초기 생성, `data/snapshots/ibm-bob/<date>.json` 샘플 스냅샷
+- [x] `bob-static.json` 새 스키마 반영
 
 ## Relevant Context
 
-- `ProductData` 구조:
-  ```ts
-  { name, version, features: string[], pricing: PricingPlan[], supportedIDEs: string[], lastUpdated: string, sourceUrl: string }
-  ```
-- `PricingPlan` 구조:
-  ```ts
-  { plan: string, price: string, unit: string, features: string[] }
-  ```
-- `Diff` 구조:
-  ```ts
-  { field: string, old: string, new: string }
-  ```
-- diff 결과는 Step 5의 `UpdateBanner` 컴포넌트에 전달됨
-- Bob 데이터는 수동 관리 (공식 내부 자료 기반) — 크롤링 대상 아님
+- 디렉터리는 제품 **슬러그**(`copilot`, `claude-code`, `codex`, `cursor`, `ibm-bob`) 기준
+- `Snapshot.features`는 Bob 중심 비교 유지를 위해 평면 배열 유지
+- `models` 신규 필드 — 지원 모델(GPT/Claude/Granite) 추적
+- 통합본(`timeline.json`/`changes.json`)은 파이프라인이 매 실행 재생성 → Cloudflare 정적 import
