@@ -9,11 +9,11 @@
       "price": "20.00",
       "unit": "USD per instance",
       "features": [
-        "AI-assisted coding with intelligent suggestions",
+        "AI-assisted coding",
+        "Intelligent suggestions",
         "Real-time completions",
         "Context-aware assistance",
-        "40 Bobcoins Monthly/Annual",
-        "Agentic Modes including Bob-Shell and Enhanced Security"
+        "40 Bobcoins Monthly/Annual"
       ]
     },
     {
@@ -21,11 +21,10 @@
       "price": "60.00",
       "unit": "USD per instance",
       "features": [
+        "Accelerate workflows",
         "Streamline repetitive tasks",
-        "Automated code reviews",
-        "Proactive insights",
-        "160 Bobcoins Monthly/Annual",
-        "Same features as Pro"
+        "Automate code reviews",
+        "160 Bobcoins Monthly/Annual"
       ]
     },
     {
@@ -33,30 +32,43 @@
       "price": "200.00",
       "unit": "USD per instance",
       "features": [
-        "Powerful capabilities for large codebases",
-        "Improved navigation of complicated architectures",
-        "500 Bobcoins Monthly/Annual",
-        "Same features as Pro"
+        "Manage complex projects",
+        "Plan and refactor large codebases",
+        "500 Bobcoins Monthly/Annual"
       ]
     },
     {
       "plan": "Enterprise",
       "price": "문의",
-      "unit": "Custom Annual",
+      "unit": "",
       "features": [
-        "Tailored solutions with dedicated support",
+        "Tailored solutions",
+        "Dedicated support",
         "Advanced security",
-        "Enterprise-grade infrastructure",
-        "Same features as Pro"
+        "Enterprise-grade infrastructure"
       ]
     }
   ],
   "features": [
-    "복잡한 코드를 신속하게 분석하고 이해할 수 있는 기능",
-    "AI 기반 자동화로 개발 주기 전반에 걸쳐 엔지니어링 생산성 향상",
-    "AI가 코드 작성 중 실시간으로 취약점을 감지하는 보안 기능",
-    "자동화된 테스트 작성 및 품질 보증 프로세스 지원",
-    "다양한 개발 모드 제공으로 복잡한 작업을 효율적으로 관리"
+    "AI 기반 코드 자동완성",
+    "자연어로 코드 생성",
+    "코드 설명 및 문서화",
+    "코드 리뷰 및 개선 제안",
+    "단위 테스트 자동 생성",
+    "취약점 탐지 및 보안 코드 제안",
+    "엔터프라이즈 보안 (SOC2, ISO 27001)",
+    "온프레미스 배포 지원",
+    "IBM watsonx 생태계 통합",
+    "커스텀 모델 파인튜닝",
+    "GDPR / HIPAA 컴플라이언스",
+    "전담 엔터프라이즈 지원 (SLA 보장)",
+    "코드 출처 추적 (IP 보호)",
+    "다국어 지원 (60개 이상 프로그래밍 언어)",
+    "복잡한 개발 작업의 자동화",
+    "코드 분석, 리팩토링 및 테스트 자동화 지원",
+    "실시간 분석과 자동화된 보안 검사를 통한 보안 강화",
+    "다양한 에이전트 모드로 복잡한 개발 흐름 지원",
+    "AI 기반의 지속적인 코드 현대화 및 자동화"
   ],
   "models": [
     "IBM Granite Code",

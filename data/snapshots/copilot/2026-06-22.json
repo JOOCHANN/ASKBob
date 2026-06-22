@@ -10,9 +10,8 @@
       "unit": "user/month",
       "features": [
         "2,000 completions per month",
-        "Access to Haiku 4.5, GPT-5 mini",
-        "Copilot CLI",
-        "No credit card required"
+        "Access to Haiku 4.5, GPT-5 mini, and more",
+        "Copilot CLI"
       ]
     },
     {
@@ -23,9 +22,7 @@
         "Everything in Free",
         "Access to Cloud agent and code review",
         "Unlimited code completion and next edit suggestions",
-        "Access to 3rd party agents (Claude Code and Codex)",
-        "Model selection",
-        "$15 monthly total credits"
+        "Access to 3rd party agents (Claude Code and Codex)"
       ]
     },
     {
@@ -36,8 +33,7 @@
         "Everything in Pro",
         "Access to premium models, including Opus",
         "Audit logs",
-        "4x+ included usage than Pro",
-        "$70 monthly total credits"
+        "4x+ included usage than Pro"
       ]
     },
     {
@@ -47,34 +43,33 @@
       "features": [
         "Everything in Pro+",
         "Priority access to new models and features",
-        "2.9x+ included usage than Pro+",
-        "$200 monthly total credits"
+        "2.9x+ included usage than Pro+"
       ]
     }
   ],
   "features": [
-    "자동 완성이 포함된 코드 추천 기능",
-    "코드 리뷰 및 수정 제안 기능",
-    "다양한 IDE 통합 지원 (VS Code, Visual Studio 등)",
-    "모델 선택 및 외부 도구와의 통합",
-    "조직 단위의 라이선스 및 정책 관리 기능",
-    "프리미엄 모델 접근 및 높은 사용량 처리 지원"
+    "코드 자동 완성 및 다음 편집 제안 기능",
+    "Cloud agent 및 코드 리뷰 접근",
+    "3rd party 에이전트 접근 지원",
+    "프리미엄 모델 접근 및 감사 로그",
+    "간편한 코드 배포를 위한 풀 요청 생성",
+    "강력한 보안 기능 및 사용자 관리 옵션"
   ],
   "models": [
-    "Anthropic Claude Fable 5",
-    "Anthropic Claude Haiku 4.5",
-    "OpenAI GPT-5 mini",
-    "Google Gemini 3.5 Flash"
+    "GPT-5 mini",
+    "Claude Fable 5",
+    "Claude Haiku 4.5",
+    "Claude Opus",
+    "Google Gemini"
   ],
   "supportedIDEs": [
-    "GitHub",
-    "Visual Studio Code",
+    "VS Code",
     "Visual Studio",
     "JetBrains IDEs",
-    "Xcode",
     "Neovim",
     "Eclipse",
+    "Xcode",
     "SQL Server Management Studio",
-    "GitHub CLI"
+    "GitHub (웹 및 Mobile)"
   ]
 }

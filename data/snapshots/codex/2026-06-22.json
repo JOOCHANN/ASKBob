@@ -6,39 +6,39 @@
   "pricing": [
     {
       "plan": "Free",
-      "price": "$0",
+      "price": "0",
       "unit": "user/month",
       "features": [
-        "정의된 코딩 태스크에 대한 기본 기능"
+        "기본적인 코딩 작업 지원"
       ]
     },
     {
       "plan": "Go",
-      "price": "$8",
+      "price": "8",
       "unit": "user/month",
       "features": [
-        "경량 코딩 태스크 지원",
-        "CLI 및 IDE 확장 지원"
+        "가벼운 코딩 작업 지원"
       ]
     },
     {
       "plan": "Plus",
-      "price": "$20",
+      "price": "20",
       "unit": "user/month",
       "features": [
-        "주간 집중 코딩 세션",
+        "집중적인 코딩 세션 지원",
+        "Slack 통합 기능",
         "자동 코드 리뷰",
-        "Slack 통합",
-        "최신 모델(GPT-5.5 등) 지원"
+        "최신 모델 접근"
       ]
     },
     {
       "plan": "Pro",
-      "price": "From $100",
+      "price": "100",
       "unit": "user/month",
       "features": [
-        "일상적인 코딩 태스크에 적합한 빠른 Codex 모델(GPT-5.3-Codex-Spark) 접근",
-        "5배 또는 20배 더 높은 사용 한도"
+        "더 높은 사용 한도",
+        "GPT-5.3-Codex-Spark 접속",
+        "일상적인 코딩 작업을 위한 빠른 모델"
       ]
     },
     {
@@ -46,8 +46,8 @@
       "price": "문의",
       "unit": "",
       "features": [
-        "팀 요구에 맞춘 Codex 시트 할당",
-        "기본 관리 제어 및 SAML SSO"
+        "사용자 기준의 Codex 좌석 배정",
+        "필수 관리 기능 포함"
       ]
     },
     {
@@ -56,16 +56,16 @@
       "unit": "",
       "features": [
         "우선 요청 처리",
-        "SCIM, EKM, 도메인 인증 지원"
+        "Enterprise 수준의 보안 및 통제"
       ]
     }
   ],
   "features": [
-    "코드 생성 및 텍스트 생성 기능",
-    "자동 코드 리뷰 및 승인 요청",
-    "Slack 및 GitHub 통합 기능",
-    "CLI 및 SDK를 통한 자동화",
-    "지속적인 워크플로우 관리 및 작업 자동화"
+    "GPT-5.5, GPT-5.4 및 GPT-5.4 mini로 최신 모델을 사용하여 쉽게 코딩 가능",
+    "코드 자동 리뷰 및 팀 협업을 위한 Slack 통합",
+    "CLI, SDK 및 IDE 확장을 통해 Codex 에코시스템 통합",
+    "GDPR 및 SCIM과 같은 기업 데이터 보안 수준을 준수",
+    "고급 자동화 기능을 포함한 코드 작업 및 관리 대시보드 제공"
   ],
   "models": [
     "GPT-5.5",
@@ -75,6 +75,6 @@
   "supportedIDEs": [
     "CLI",
     "IDE 확장",
-    "Web"
+    "웹 앱"
   ]
 }

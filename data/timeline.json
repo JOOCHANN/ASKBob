@@ -9,15 +9,27 @@
         "version": "latest",
         "pricing": [
           {
+            "plan": "Free",
+            "price": "0",
+            "unit": "",
+            "features": [
+              "Chat on web, iOS, Android, and on desktop",
+              "Generate code and visualize data",
+              "Write, edit, and create content",
+              "Ability to search the web",
+              "Memory across conversations"
+            ]
+          },
+          {
             "plan": "Pro",
             "price": "17",
             "unit": "user/month",
             "features": [
+              "Everything in Free",
+              "More usage",
               "Includes Claude Code",
-              "More usage than Free",
-              "Unlimited projects",
-              "Access to Research",
-              "Ability to use more Claude models"
+              "Includes Claude Cowork",
+              "Access to unlimited projects"
             ]
           },
           {
@@ -25,10 +37,9 @@
             "price": "100",
             "unit": "user/month",
             "features": [
-              "Includes Claude Code",
-              "5x more usage than Pro",
-              "Higher output limits for all tasks",
-              "Early access to advanced Claude features"
+              "Everything in Pro",
+              "Choose 5x more usage than Pro",
+              "Higher output limits for all tasks"
             ]
           },
           {
@@ -36,28 +47,19 @@
             "price": "200",
             "unit": "user/month",
             "features": [
-              "Includes Claude Code",
-              "20x more usage than Pro",
-              "Higher output limits for all tasks",
+              "Even more usage than Max 5x",
               "Priority access at high traffic times"
-            ]
-          },
-          {
-            "plan": "Free",
-            "price": "0",
-            "unit": "",
-            "features": [
-              "Chat on web, iOS, Android, desktop",
-              "Generate code and visualize data"
             ]
           }
         ],
         "features": [
-          "코드 베이스를 읽고 수정하며, 터미널에서 명령을 실행할 수 있는 자율 에이전트",
-          "직관적인 자연어 사용을 통한 빌드, 디버그 및 배포 지원",
-          "모든 CLI 도구 및 IDE와 통합 작동",
-          "GitHub, GitLab과 통합하여 PR 처리",
-          "멀티 파일 편집 및 코드베이스 이해를 통한 강력한 수정 가능"
+          "강력한 코드 편집 및 문제 해결 능력",
+          "터미널 및 다양한 IDE와의 통합",
+          "다양한 코드 교정 및 테스트 실행 기능",
+          "자연어로 명령 실행 및 결과 확인",
+          "개발자 도구와의 원활한 연결",
+          "코드비즈를 읽고 이해하여 빠르게 수정 가능",
+          "CI/CD 파이프라인 통합 및 GitHub 사용"
         ],
         "models": [
           "Fable",
@@ -68,8 +70,7 @@
         "supportedIDEs": [
           "VS Code",
           "JetBrains",
-          "터미널",
-          "웹 브라우저"
+          "브라우저"
         ]
       }
     ],
@@ -82,39 +83,39 @@
         "pricing": [
           {
             "plan": "Free",
-            "price": "$0",
+            "price": "0",
             "unit": "user/month",
             "features": [
-              "정의된 코딩 태스크에 대한 기본 기능"
+              "기본적인 코딩 작업 지원"
             ]
           },
           {
             "plan": "Go",
-            "price": "$8",
+            "price": "8",
             "unit": "user/month",
             "features": [
-              "경량 코딩 태스크 지원",
-              "CLI 및 IDE 확장 지원"
+              "가벼운 코딩 작업 지원"
             ]
           },
           {
             "plan": "Plus",
-            "price": "$20",
+            "price": "20",
             "unit": "user/month",
             "features": [
-              "주간 집중 코딩 세션",
+              "집중적인 코딩 세션 지원",
+              "Slack 통합 기능",
               "자동 코드 리뷰",
-              "Slack 통합",
-              "최신 모델(GPT-5.5 등) 지원"
+              "최신 모델 접근"
             ]
           },
           {
             "plan": "Pro",
-            "price": "From $100",
+            "price": "100",
             "unit": "user/month",
             "features": [
-              "일상적인 코딩 태스크에 적합한 빠른 Codex 모델(GPT-5.3-Codex-Spark) 접근",
-              "5배 또는 20배 더 높은 사용 한도"
+              "더 높은 사용 한도",
+              "GPT-5.3-Codex-Spark 접속",
+              "일상적인 코딩 작업을 위한 빠른 모델"
             ]
           },
           {
@@ -122,8 +123,8 @@
             "price": "문의",
             "unit": "",
             "features": [
-              "팀 요구에 맞춘 Codex 시트 할당",
-              "기본 관리 제어 및 SAML SSO"
+              "사용자 기준의 Codex 좌석 배정",
+              "필수 관리 기능 포함"
             ]
           },
           {
@@ -132,16 +133,16 @@
             "unit": "",
             "features": [
               "우선 요청 처리",
-              "SCIM, EKM, 도메인 인증 지원"
+              "Enterprise 수준의 보안 및 통제"
             ]
           }
         ],
         "features": [
-          "코드 생성 및 텍스트 생성 기능",
-          "자동 코드 리뷰 및 승인 요청",
-          "Slack 및 GitHub 통합 기능",
-          "CLI 및 SDK를 통한 자동화",
-          "지속적인 워크플로우 관리 및 작업 자동화"
+          "GPT-5.5, GPT-5.4 및 GPT-5.4 mini로 최신 모델을 사용하여 쉽게 코딩 가능",
+          "코드 자동 리뷰 및 팀 협업을 위한 Slack 통합",
+          "CLI, SDK 및 IDE 확장을 통해 Codex 에코시스템 통합",
+          "GDPR 및 SCIM과 같은 기업 데이터 보안 수준을 준수",
+          "고급 자동화 기능을 포함한 코드 작업 및 관리 대시보드 제공"
         ],
         "models": [
           "GPT-5.5",
@@ -151,7 +152,7 @@
         "supportedIDEs": [
           "CLI",
           "IDE 확장",
-          "Web"
+          "웹 앱"
         ]
       }
     ],
@@ -168,9 +169,8 @@
             "unit": "user/month",
             "features": [
               "2,000 completions per month",
-              "Access to Haiku 4.5, GPT-5 mini",
-              "Copilot CLI",
-              "No credit card required"
+              "Access to Haiku 4.5, GPT-5 mini, and more",
+              "Copilot CLI"
             ]
           },
           {
@@ -181,9 +181,7 @@
               "Everything in Free",
               "Access to Cloud agent and code review",
               "Unlimited code completion and next edit suggestions",
-              "Access to 3rd party agents (Claude Code and Codex)",
-              "Model selection",
-              "$15 monthly total credits"
+              "Access to 3rd party agents (Claude Code and Codex)"
             ]
           },
           {
@@ -194,8 +192,7 @@
               "Everything in Pro",
               "Access to premium models, including Opus",
               "Audit logs",
-              "4x+ included usage than Pro",
-              "$70 monthly total credits"
+              "4x+ included usage than Pro"
             ]
           },
           {
@@ -205,35 +202,34 @@
             "features": [
               "Everything in Pro+",
               "Priority access to new models and features",
-              "2.9x+ included usage than Pro+",
-              "$200 monthly total credits"
+              "2.9x+ included usage than Pro+"
             ]
           }
         ],
         "features": [
-          "자동 완성이 포함된 코드 추천 기능",
-          "코드 리뷰 및 수정 제안 기능",
-          "다양한 IDE 통합 지원 (VS Code, Visual Studio 등)",
-          "모델 선택 및 외부 도구와의 통합",
-          "조직 단위의 라이선스 및 정책 관리 기능",
-          "프리미엄 모델 접근 및 높은 사용량 처리 지원"
+          "코드 자동 완성 및 다음 편집 제안 기능",
+          "Cloud agent 및 코드 리뷰 접근",
+          "3rd party 에이전트 접근 지원",
+          "프리미엄 모델 접근 및 감사 로그",
+          "간편한 코드 배포를 위한 풀 요청 생성",
+          "강력한 보안 기능 및 사용자 관리 옵션"
         ],
         "models": [
-          "Anthropic Claude Fable 5",
-          "Anthropic Claude Haiku 4.5",
-          "OpenAI GPT-5 mini",
-          "Google Gemini 3.5 Flash"
+          "GPT-5 mini",
+          "Claude Fable 5",
+          "Claude Haiku 4.5",
+          "Claude Opus",
+          "Google Gemini"
         ],
         "supportedIDEs": [
-          "GitHub",
-          "Visual Studio Code",
+          "VS Code",
           "Visual Studio",
           "JetBrains IDEs",
-          "Xcode",
           "Neovim",
           "Eclipse",
+          "Xcode",
           "SQL Server Management Studio",
-          "GitHub CLI"
+          "GitHub (웹 및 Mobile)"
         ]
       }
     ],
@@ -283,7 +279,7 @@
             ]
           },
           {
-            "plan": "Enterprise",
+            "plan": "Teams Enterprise",
             "price": "Custom",
             "unit": "",
             "features": [
@@ -300,14 +296,14 @@
           }
         ],
         "features": [
-          "에이전트를 통한 코드 생성 및 개발 지원",
-          "AI 기반 코드 내비게이션",
-          "실시간 협업 가능",
-          "세분화된 사용 분석 도구",
-          "모델별 맞춤형 코드 완성",
-          "고급 보안 기능 지원",
-          "클라우드 환경에서의 자동화",
-          "온프레미스 배포 옵션"
+          "AI 기반 코딩 에이전트 제공",
+          "모델 사용 온디맨드 기능",
+          "코드리뷰 및 분석 지원",
+          "클라우드 기반 에이전트와 자동화",
+          "팀 단위로 사용자 관리 및 SSO 지원",
+          "AI 코드 추적 API 제공",
+          "비용 효율적인 사용 기반 과금",
+          "강력한 보안 및 데이터 프라이버시 보장"
         ],
         "models": [
           "GPT-5.5",
@@ -316,10 +312,9 @@
           "Pro Grok 4.3"
         ],
         "supportedIDEs": [
-          "VSCode",
-          "JetBrains IDEs",
-          "Terminal",
-          "Slack"
+          "CLI",
+          "Slack",
+          "GitHub"
         ]
       }
     ],
@@ -335,11 +330,11 @@
             "price": "20.00",
             "unit": "USD per instance",
             "features": [
-              "AI-assisted coding with intelligent suggestions",
+              "AI-assisted coding",
+              "Intelligent suggestions",
               "Real-time completions",
               "Context-aware assistance",
-              "40 Bobcoins Monthly/Annual",
-              "Agentic Modes including Bob-Shell and Enhanced Security"
+              "40 Bobcoins Monthly/Annual"
             ]
           },
           {
@@ -347,11 +342,10 @@
             "price": "60.00",
             "unit": "USD per instance",
             "features": [
+              "Accelerate workflows",
               "Streamline repetitive tasks",
-              "Automated code reviews",
-              "Proactive insights",
-              "160 Bobcoins Monthly/Annual",
-              "Same features as Pro"
+              "Automate code reviews",
+              "160 Bobcoins Monthly/Annual"
             ]
           },
           {
@@ -359,30 +353,43 @@
             "price": "200.00",
             "unit": "USD per instance",
             "features": [
-              "Powerful capabilities for large codebases",
-              "Improved navigation of complicated architectures",
-              "500 Bobcoins Monthly/Annual",
-              "Same features as Pro"
+              "Manage complex projects",
+              "Plan and refactor large codebases",
+              "500 Bobcoins Monthly/Annual"
             ]
           },
           {
             "plan": "Enterprise",
             "price": "문의",
-            "unit": "Custom Annual",
+            "unit": "",
             "features": [
-              "Tailored solutions with dedicated support",
+              "Tailored solutions",
+              "Dedicated support",
               "Advanced security",
-              "Enterprise-grade infrastructure",
-              "Same features as Pro"
+              "Enterprise-grade infrastructure"
             ]
           }
         ],
         "features": [
-          "복잡한 코드를 신속하게 분석하고 이해할 수 있는 기능",
-          "AI 기반 자동화로 개발 주기 전반에 걸쳐 엔지니어링 생산성 향상",
-          "AI가 코드 작성 중 실시간으로 취약점을 감지하는 보안 기능",
-          "자동화된 테스트 작성 및 품질 보증 프로세스 지원",
-          "다양한 개발 모드 제공으로 복잡한 작업을 효율적으로 관리"
+          "AI 기반 코드 자동완성",
+          "자연어로 코드 생성",
+          "코드 설명 및 문서화",
+          "코드 리뷰 및 개선 제안",
+          "단위 테스트 자동 생성",
+          "취약점 탐지 및 보안 코드 제안",
+          "엔터프라이즈 보안 (SOC2, ISO 27001)",
+          "온프레미스 배포 지원",
+          "IBM watsonx 생태계 통합",
+          "커스텀 모델 파인튜닝",
+          "GDPR / HIPAA 컴플라이언스",
+          "전담 엔터프라이즈 지원 (SLA 보장)",
+          "코드 출처 추적 (IP 보호)",
+          "다국어 지원 (60개 이상 프로그래밍 언어)",
+          "복잡한 개발 작업의 자동화",
+          "코드 분석, 리팩토링 및 테스트 자동화 지원",
+          "실시간 분석과 자동화된 보안 검사를 통한 보안 강화",
+          "다양한 에이전트 모드로 복잡한 개발 흐름 지원",
+          "AI 기반의 지속적인 코드 현대화 및 자동화"
         ],
         "models": [
           "IBM Granite Code",

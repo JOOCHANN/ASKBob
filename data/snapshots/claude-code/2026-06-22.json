@@ -5,15 +5,27 @@
   "version": "latest",
   "pricing": [
     {
+      "plan": "Free",
+      "price": "0",
+      "unit": "",
+      "features": [
+        "Chat on web, iOS, Android, and on desktop",
+        "Generate code and visualize data",
+        "Write, edit, and create content",
+        "Ability to search the web",
+        "Memory across conversations"
+      ]
+    },
+    {
       "plan": "Pro",
       "price": "17",
       "unit": "user/month",
       "features": [
+        "Everything in Free",
+        "More usage",
         "Includes Claude Code",
-        "More usage than Free",
-        "Unlimited projects",
-        "Access to Research",
-        "Ability to use more Claude models"
+        "Includes Claude Cowork",
+        "Access to unlimited projects"
       ]
     },
     {
@@ -21,10 +33,9 @@
       "price": "100",
       "unit": "user/month",
       "features": [
-        "Includes Claude Code",
-        "5x more usage than Pro",
-        "Higher output limits for all tasks",
-        "Early access to advanced Claude features"
+        "Everything in Pro",
+        "Choose 5x more usage than Pro",
+        "Higher output limits for all tasks"
       ]
     },
     {
@@ -32,28 +43,19 @@
       "price": "200",
       "unit": "user/month",
       "features": [
-        "Includes Claude Code",
-        "20x more usage than Pro",
-        "Higher output limits for all tasks",
+        "Even more usage than Max 5x",
         "Priority access at high traffic times"
-      ]
-    },
-    {
-      "plan": "Free",
-      "price": "0",
-      "unit": "",
-      "features": [
-        "Chat on web, iOS, Android, desktop",
-        "Generate code and visualize data"
       ]
     }
   ],
   "features": [
-    "코드 베이스를 읽고 수정하며, 터미널에서 명령을 실행할 수 있는 자율 에이전트",
-    "직관적인 자연어 사용을 통한 빌드, 디버그 및 배포 지원",
-    "모든 CLI 도구 및 IDE와 통합 작동",
-    "GitHub, GitLab과 통합하여 PR 처리",
-    "멀티 파일 편집 및 코드베이스 이해를 통한 강력한 수정 가능"
+    "강력한 코드 편집 및 문제 해결 능력",
+    "터미널 및 다양한 IDE와의 통합",
+    "다양한 코드 교정 및 테스트 실행 기능",
+    "자연어로 명령 실행 및 결과 확인",
+    "개발자 도구와의 원활한 연결",
+    "코드비즈를 읽고 이해하여 빠르게 수정 가능",
+    "CI/CD 파이프라인 통합 및 GitHub 사용"
   ],
   "models": [
     "Fable",
@@ -64,7 +66,6 @@
   "supportedIDEs": [
     "VS Code",
     "JetBrains",
-    "터미널",
-    "웹 브라우저"
+    "브라우저"
   ]
 }
