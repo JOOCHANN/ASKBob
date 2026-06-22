@@ -29,13 +29,15 @@ async function crawlSnapshot(target: CrawlTarget, date: string): Promise<Snapsho
 /** Bob: 크롤 결과를 우선하되 빈 필드는 curated(bob-static)로 보완 */
 function mergeBob(crawled: Snapshot, curated: Snapshot): Snapshot {
   const pick = <T>(a: T[], b: T[]) => (a.length ? a : b);
+  const union = (a: string[], b: string[]) => [...new Set([...a, ...b])];
   return {
     product: crawled.product,
     collectedAt: crawled.collectedAt,
     sourceUrl: crawled.sourceUrl,
     version: crawled.version || curated.version,
     pricing: crawled.pricing.length ? crawled.pricing : curated.pricing,
-    features: pick(crawled.features, curated.features),
+    // 셀러 차별점 보존: curated 차별 기능을 먼저, 크롤 기능을 뒤에 합집합으로
+    features: union(curated.features, crawled.features),
     models: pick(crawled.models, curated.models),
     supportedIDEs: pick(crawled.supportedIDEs, curated.supportedIDEs),
   };
