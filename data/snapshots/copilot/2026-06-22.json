@@ -1,0 +1,67 @@
+{
+  "product": "GitHub Copilot",
+  "collectedAt": "2026-06-22",
+  "sourceUrl": "https://github.com/features/copilot/plans",
+  "version": "latest",
+  "pricing": [
+    {
+      "plan": "Free",
+      "price": "0",
+      "unit": "user/month",
+      "features": [
+        "2,000 completions per month",
+        "Access to Haiku 4.5, GPT-5 mini, and more",
+        "Copilot CLI"
+      ]
+    },
+    {
+      "plan": "Pro",
+      "price": "10",
+      "unit": "user/month",
+      "features": [
+        "Access to Cloud agent and code review",
+        "Unlimited code completion and next edit suggestions",
+        "Access to 3rd party agents (Claude Code and Codex)"
+      ]
+    },
+    {
+      "plan": "Pro+",
+      "price": "39",
+      "unit": "user/month",
+      "features": [
+        "Access to premium models",
+        "Audit logs",
+        "4x+ included usage than Pro"
+      ]
+    },
+    {
+      "plan": "Max",
+      "price": "100",
+      "unit": "user/month",
+      "features": [
+        "Priority access to new models and features",
+        "2.9x+ included usage than Pro+"
+      ]
+    }
+  ],
+  "features": [
+    "AI 비서로서 코드 자동완성 및 코드 리뷰 기능",
+    "다양한 모델 지원",
+    "IDE와의 통합 지원"
+  ],
+  "models": [
+    "GPT-5 mini",
+    "Claude Code",
+    "Codex",
+    "Opus",
+    "Claude Fable 5"
+  ],
+  "supportedIDEs": [
+    "Visual Studio Code",
+    "Visual Studio",
+    "JetBrains IDEs",
+    "Neovim",
+    "Eclipse",
+    "Xcode"
+  ]
+}

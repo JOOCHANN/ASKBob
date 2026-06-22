@@ -1,0 +1,77 @@
+{
+  "product": "OpenAI Codex",
+  "collectedAt": "2026-06-22",
+  "sourceUrl": "https://developers.openai.com/codex/pricing",
+  "version": "latest",
+  "pricing": [
+    {
+      "plan": "Free",
+      "price": "0",
+      "unit": "month",
+      "features": [
+        "Explore Codex capabilities on quick coding tasks."
+      ]
+    },
+    {
+      "plan": "Go",
+      "price": "8",
+      "unit": "month",
+      "features": [
+        "Use Codex for lightweight coding tasks."
+      ]
+    },
+    {
+      "plan": "Plus",
+      "price": "20",
+      "unit": "month",
+      "features": [
+        "Power a few focused coding sessions each week.",
+        "Access to Codex on the web, in the CLI, in the IDE extension, and on iOS.",
+        "Cloud-based integrations like automatic code review and Slack integration.",
+        "The latest models, including GPT-5.5, GPT-5.4, and GPT-5.4 mini."
+      ]
+    },
+    {
+      "plan": "Pro",
+      "price": "From 100",
+      "unit": "month",
+      "features": [
+        "Choose 5x or 20x higher rate limits than Plus.",
+        "Access to GPT-5.3-Codex-Spark (research preview).",
+        "5x or 20x more Codex usage than Plus."
+      ]
+    },
+    {
+      "plan": "Business",
+      "price": "문의",
+      "unit": "",
+      "features": [
+        "Bring Codex into your startup or growing business.",
+        "Assign standard or usage-based Codex seats based on your team’s needs."
+      ]
+    },
+    {
+      "plan": "Enterprise & Edu",
+      "price": "문의",
+      "unit": "",
+      "features": [
+        "Unlock Codex for your entire organization with enterprise-grade functionality.",
+        "Priority request processing and enterprise-level security and controls."
+      ]
+    }
+  ],
+  "features": [
+    "코드 생성 및 수정 지원",
+    "코드 리뷰 및 자동화 기능",
+    "CLI 및 IDE와 통합"
+  ],
+  "models": [
+    "GPT-5.5",
+    "GPT-5.4",
+    "GPT-5.4 mini",
+    "GPT-5.3-Codex-Spark (research preview)"
+  ],
+  "supportedIDEs": [
+    "IDE extension"
+  ]
+}
