@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@import "@carbon/styles/css/styles.css";
+
+:root {
+  --ibm-blue: #0f62fe;
+  --ibm-dark-bg: #161616;
+  --ibm-gray-90: #262626;
+  --ibm-gray-80: #393939;
+  --ibm-text: #f4f4f4;
+  --ibm-text-secondary: #c6c6c6;
+}
+
+body {
+  background-color: var(--ibm-dark-bg);
+  color: var(--ibm-text);
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+}
