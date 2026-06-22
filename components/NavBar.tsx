@@ -3,41 +3,44 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+const links = [
+  { href: "/", label: "비교 대시보드" },
+  { href: "/chat", label: "Q&A 챗봇" },
+];
+
 export default function NavBar() {
   const pathname = usePathname();
 
   return (
-    <header className="bg-[#161616] border-b border-[#393939] sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 h-12 flex items-center justify-between">
-        {/* 로고 */}
-        <Link href="/" className="flex items-center gap-2 no-underline">
-          <span className="text-[#0f62fe] font-bold text-lg tracking-tight">IBM</span>
-          <span className="text-[#f4f4f4] font-semibold text-base">Bob</span>
-          <span className="text-[#8d8d8d] text-xs ml-1 hidden sm:inline">Seller Companion</span>
+    <header className="sticky top-0 z-50 border-b border-[#2a2a2a] bg-[#161616]/80 backdrop-blur-md">
+      <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6">
+        <Link href="/" className="group flex items-center gap-2.5 no-underline">
+          <span className="flex h-7 w-7 items-center justify-center rounded-md bg-gradient-to-br from-[#4589ff] to-[#0f62fe] text-xs font-bold text-white shadow-[0_0_12px_rgba(15,98,254,0.5)]">
+            B
+          </span>
+          <span className="flex items-baseline gap-1.5">
+            <span className="text-base font-semibold tracking-tight text-[#f4f4f4]">IBM Bob</span>
+            <span className="hidden text-xs text-[#6f6f6f] sm:inline">AI Tracker</span>
+          </span>
         </Link>
 
-        {/* 네비게이션 */}
         <nav className="flex items-center gap-1">
-          <Link
-            href="/"
-            className={`px-3 py-1.5 text-sm rounded transition-colors no-underline ${
-              pathname === "/"
-                ? "bg-[#0f62fe] text-white"
-                : "text-[#c6c6c6] hover:bg-[#393939] hover:text-white"
-            }`}
-          >
-            비교 대시보드
-          </Link>
-          <Link
-            href="/chat"
-            className={`px-3 py-1.5 text-sm rounded transition-colors no-underline ${
-              pathname === "/chat"
-                ? "bg-[#0f62fe] text-white"
-                : "text-[#c6c6c6] hover:bg-[#393939] hover:text-white"
-            }`}
-          >
-            Q&A 챗봇
-          </Link>
+          {links.map((l) => {
+            const active = pathname === l.href;
+            return (
+              <Link
+                key={l.href}
+                href={l.href}
+                className={`rounded-md px-3 py-1.5 text-sm no-underline transition-all ${
+                  active
+                    ? "bg-[#0f62fe] text-white shadow-[0_0_12px_rgba(15,98,254,0.35)]"
+                    : "text-[#c6c6c6] hover:bg-[#262626] hover:text-white"
+                }`}
+              >
+                {l.label}
+              </Link>
+            );
+          })}
         </nav>
       </div>
     </header>

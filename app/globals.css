@@ -3,6 +3,7 @@
 
 :root {
   --ibm-blue: #0f62fe;
+  --ibm-blue-light: #78a9ff;
   --ibm-dark-bg: #161616;
   --ibm-gray-90: #262626;
   --ibm-gray-80: #393939;
@@ -10,8 +11,59 @@
   --ibm-text-secondary: #c6c6c6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--ibm-dark-bg);
   color: var(--ibm-text);
-  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  font-family: "IBM Plex Sans", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  /* 은은한 상단 글로우 + 그리드 배경 */
+  background-image:
+    radial-gradient(60rem 40rem at 50% -10rem, rgba(15, 98, 254, 0.12), transparent 70%),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 44px 44px, 44px 44px;
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(15, 98, 254, 0.35);
+  color: #fff;
+}
+
+/* 커스텀 스크롤바 */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: #393939;
+  border-radius: 999px;
+  border: 2px solid var(--ibm-dark-bg);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #525252;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-in {
+  animation: fade-in-up 0.35s ease both;
 }
