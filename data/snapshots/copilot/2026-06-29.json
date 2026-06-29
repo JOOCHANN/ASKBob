@@ -1,0 +1,79 @@
+{
+  "product": "GitHub Copilot",
+  "collectedAt": "2026-06-29",
+  "sourceUrl": "https://github.com/features/copilot/plans",
+  "version": "latest",
+  "pricing": [
+    {
+      "plan": "Free",
+      "price": "$0",
+      "unit": "user/month",
+      "features": [
+        "2,000 completions per month",
+        "Access to Haiku 4.5, GPT-5 mini, and more",
+        "Copilot CLI"
+      ]
+    },
+    {
+      "plan": "Pro",
+      "price": "$10",
+      "unit": "user/month",
+      "features": [
+        "Everything in Free",
+        "Access to Cloud agent and code review",
+        "Unlimited code completion and next edit suggestions",
+        "Access to 3rd party agents (Claude Code and Codex)",
+        "Model selection"
+      ]
+    },
+    {
+      "plan": "Pro+",
+      "price": "$39",
+      "unit": "user/month",
+      "features": [
+        "Everything in Pro",
+        "Access to premium models, including Opus",
+        "Audit logs",
+        "4x+ included usage than Pro"
+      ]
+    },
+    {
+      "plan": "Max",
+      "price": "$100",
+      "unit": "user/month",
+      "features": [
+        "Everything in Pro+",
+        "Priority access to new models and features",
+        "2.9x+ included usage than Pro+"
+      ]
+    }
+  ],
+  "features": [
+    "코드 작성 및 제안 기능",
+    "AI 지원 코드 리뷰",
+    "클라우드 에이전트 지원",
+    "3자 코드 에이전트 통합 지원",
+    "프리미엄 모델 접근",
+    "무제한 코드 완성 및 다음 편집 제안",
+    "조직에 맞춤형 인프라 통합",
+    "사용 정책 관리 및 라이센스 관리 기능"
+  ],
+  "models": [
+    "Haiku 4.5",
+    "GPT-5 mini",
+    "Claude Code",
+    "Codex",
+    "Claude Fable 5",
+    "Claude Opus"
+  ],
+  "supportedIDEs": [
+    "Visual Studio Code",
+    "Visual Studio",
+    "JetBrains IDEs",
+    "Neovim",
+    "Eclipse",
+    "Xcode",
+    "GitHub Mobile",
+    "Terminal (CLI)"
+  ]
+}

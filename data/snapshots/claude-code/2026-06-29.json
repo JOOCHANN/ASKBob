@@ -1,0 +1,76 @@
+{
+  "product": "Claude Code",
+  "collectedAt": "2026-06-29",
+  "sourceUrl": "https://claude.com/product/claude-code",
+  "version": "latest",
+  "pricing": [
+    {
+      "plan": "Free",
+      "price": "0",
+      "unit": "user/month",
+      "features": [
+        "Chat on web, iOS, Android, and Desktop",
+        "Basic code generation and execution",
+        "Ability to search the web",
+        "Basic project organization features"
+      ]
+    },
+    {
+      "plan": "Pro",
+      "price": "17",
+      "unit": "user/month (billed annually at $200 up front)",
+      "features": [
+        "Everything in Free",
+        "More usage",
+        "Includes Claude Code and Claude Cowork",
+        "Access to unlimited projects",
+        "Access to advanced Claude models"
+      ]
+    },
+    {
+      "plan": "Max (5x)",
+      "price": "100",
+      "unit": "user/month",
+      "features": [
+        "Everything in Pro",
+        "5x more usage",
+        "Higher output limits",
+        "Early access to advanced features"
+      ]
+    },
+    {
+      "plan": "Max (20x)",
+      "price": "200",
+      "unit": "user/month",
+      "features": [
+        "Everything in Max (5x)",
+        "20x more usage",
+        "Priority access at high traffic times"
+      ]
+    }
+  ],
+  "features": [
+    "코드베이스를 이해하고 파일을 수정하며 명령을 실행할 수 있는 AI 코드 에이전트",
+    "자연어를 사용하여 소프트웨어 개발, 디버깅, 배포를 지원",
+    "VS Code, JetBrains 등의 IDE와 통합 가능",
+    "고급 기능으로는 동적 워크플로우 및 여러 하위 에이전트의 실행 지원",
+    "GitHub 및 GitLab과 통합하여 전체 워크플로 처리 가능",
+    "CLI 도구와의 높은 통합성으로 기존 작업 흐름 유지",
+    "코드 리뷰, 테스트 자동화 등 기본적인 개발 업무에 적합",
+    "보안 관련 고급 기능 제공 및 데이터 보호"
+  ],
+  "models": [
+    "Claude Fable 5",
+    "Claude Opus 4.8",
+    "Claude Sonnet 4.6",
+    "Claude Haiku 4.5"
+  ],
+  "supportedIDEs": [
+    "macOS",
+    "Linux",
+    "Windows",
+    "VS Code",
+    "JetBrains",
+    "브라우저"
+  ]
+}

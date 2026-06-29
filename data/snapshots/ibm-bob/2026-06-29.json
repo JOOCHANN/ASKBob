@@ -1,0 +1,89 @@
+{
+  "product": "IBM Bob",
+  "collectedAt": "2026-06-29",
+  "sourceUrl": "https://www.ibm.com/products/watsonx-code-assistant",
+  "version": "latest",
+  "pricing": [
+    {
+      "plan": "Pro",
+      "price": "20.00",
+      "unit": "USD per instance",
+      "features": [
+        "애자일 코드 작성 지원",
+        "실시간 완성 및 지능형 제안",
+        "Agentic Modes",
+        "Bob-Shell: Intelligent CLI",
+        "Literate Coding",
+        "Enhanced Security",
+        "코드 설명/개선/검토"
+      ]
+    },
+    {
+      "plan": "Pro+",
+      "price": "60.00",
+      "unit": "USD per instance",
+      "features": [
+        "매일 업무 가속화",
+        "반복 작업 자동화",
+        "코드 리뷰 자동화",
+        "AI 개발 파트너의 선제적 통찰"
+      ]
+    },
+    {
+      "plan": "Ultra",
+      "price": "200.00",
+      "unit": "USD per instance",
+      "features": [
+        "대규모 프로젝트 지원",
+        "대형 코드베이스 이해 및 계획",
+        "복잡한 아키텍처 내비게이션"
+      ]
+    },
+    {
+      "plan": "Enterprise",
+      "price": "문의",
+      "unit": "",
+      "features": [
+        "맞춤형 솔루션",
+        "전담 지원",
+        "고급 보안",
+        "기업급 인프라",
+        "팀 관리 기능"
+      ]
+    }
+  ],
+  "features": [
+    "AI 기반 코드 자동완성",
+    "자연어로 코드 생성",
+    "코드 설명 및 문서화",
+    "코드 리뷰 및 개선 제안",
+    "단위 테스트 자동 생성",
+    "취약점 탐지 및 보안 코드 제안",
+    "엔터프라이즈 보안 (SOC2, ISO 27001)",
+    "온프레미스 배포 지원",
+    "IBM watsonx 생태계 통합",
+    "커스텀 모델 파인튜닝",
+    "GDPR / HIPAA 컴플라이언스",
+    "전담 엔터프라이즈 지원 (SLA 보장)",
+    "코드 출처 추적 (IP 보호)",
+    "다국어 지원 (60개 이상 프로그래밍 언어)",
+    "AI 기반 소프트웨어 개발 가속화",
+    "20–80%의 생산성 향상",
+    "복잡한 엔지니어링 작업 20–40% 빠르게 처리",
+    "AI 작업 최적화 통해 비용 절감",
+    "실시간 분석 및 자동 검사로 보안 통합",
+    "모던화 및 코드 리팩토링 자동화",
+    "복잡한 코드를 이해하고 새로운 기능 제공"
+  ],
+  "models": [
+    "IBM Granite Code",
+    "watsonx 기반 모델"
+  ],
+  "supportedIDEs": [
+    "VS Code",
+    "IntelliJ IDEA",
+    "Eclipse",
+    "Visual Studio",
+    "JetBrains IDEs"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "product": "Cursor",
+  "collectedAt": "2026-06-29",
+  "sourceUrl": "https://cursor.com/pricing",
+  "version": "latest",
+  "pricing": [
+    {
+      "plan": "Hobby",
+      "price": "Free",
+      "unit": "",
+      "features": [
+        "카드 정보 필요 없음",
+        "제한된 Agent 요청",
+        "제한된 Tab 자동 완성"
+      ]
+    },
+    {
+      "plan": "Individual",
+      "price": "20",
+      "unit": "user/month",
+      "features": [
+        "Hobby의 모든 기능 포함",
+        "Agent의 한도 확장",
+        "프론티어 모델 접근",
+        "MCP, 기술 및 후크",
+        "클라우드 에이전트",
+        "사용량 기반의 Bugbot"
+      ]
+    },
+    {
+      "plan": "Teams",
+      "price": "40",
+      "unit": "user/month",
+      "features": [
+        "Individual의 모든 기능 포함",
+        "중앙화된 팀 청구 및 관리",
+        "내부 규칙, 기술 및 플러그인을 위한 팀 마켓플레이스",
+        "Bugbot을 이용한 코드 리뷰",
+        "클라우드 에이전트 및 공유 팀 맥락으로 자동화",
+        "팀 행동 이해를 위한 사용량 분석",
+        "팀 전체 프라이버시 모드",
+        "SAML/OIDC SSO"
+      ]
+    },
+    {
+      "plan": "Enterprise",
+      "price": "문의",
+      "unit": "",
+      "features": [
+        "Teams의 모든 기능 포함",
+        "풀링된 사용량",
+        "청구서/PO 기반 청구",
+        "SCIM 좌석 관리",
+        "저장소, 모델 및 MCP 접근 통제",
+        "자동 실행, 브라우저 및 네트워크 통제",
+        "감사 로그 및 서비스 계정",
+        "AI 코드 추적 API",
+        "우선 지원 및 계정 관리"
+      ]
+    }
+  ],
+  "features": [
+    "오토 컴플리션 및 코딩 보조 기능 제공",
+    "다양한 모델 선택 가능 (OpenAI, Anthropic 등)",
+    "팀 협업을 위한 클라우드 서비스와 자동화 솔루션",
+    "사용량 기반의 가격 책정 및 팀 모드 지원",
+    "레포지토리 및 권한 관리 기능 제공",
+    "AI 코드 추적 및 감사 로그 기능 포함",
+    "높은 보안 수준을 보장하는 프라이버시 모드 활용"
+  ],
+  "models": [
+    "GPT-5.5",
+    "Opus 4.8",
+    "Gemini 3.1",
+    "Pro Grok 4.3"
+  ],
+  "supportedIDEs": [
+    "터미널",
+    "Slack",
+    "GitHub"
+  ]
+}

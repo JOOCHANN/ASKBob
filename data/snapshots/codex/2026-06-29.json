@@ -1,0 +1,87 @@
+{
+  "product": "OpenAI Codex",
+  "collectedAt": "2026-06-29",
+  "sourceUrl": "https://developers.openai.com/codex/pricing",
+  "version": "latest",
+  "pricing": [
+    {
+      "plan": "Free",
+      "price": "0",
+      "unit": "user/month",
+      "features": [
+        "기본적인 코딩 작업에 대한 접근",
+        "Codex 기능 사용"
+      ]
+    },
+    {
+      "plan": "Go",
+      "price": "8",
+      "unit": "user/month",
+      "features": [
+        "경량 코딩 작업에 사용",
+        "Codex를 통한 코딩 지원"
+      ]
+    },
+    {
+      "plan": "Plus",
+      "price": "20",
+      "unit": "user/month",
+      "features": [
+        "주 1~2회 집중적인 코딩 작업 지원",
+        "CLI, IDE 확장, iOS에서 Codex 사용",
+        "자동 코드 리뷰 및 Slack 통합 기능",
+        "최신 모델 사용 및 유연한 사용량 확장"
+      ]
+    },
+    {
+      "plan": "Pro",
+      "price": "100",
+      "unit": "user/month",
+      "features": [
+        "Plus의 모든 기능 포함",
+        "GPT-5.3-Codex-Spark 모델 접근",
+        "5배 또는 20배 높은 사용 한도"
+      ]
+    },
+    {
+      "plan": "Business",
+      "price": "20",
+      "unit": "user/month",
+      "features": [
+        "여러 사용자에 대한 관리 기능",
+        "안전하고 전용 작업 공간",
+        "SAML SSO 및 MFA 지원"
+      ]
+    },
+    {
+      "plan": "Enterprise & Edu",
+      "price": "문의",
+      "unit": "",
+      "features": [
+        "조직 전체에 Codex 기능 제공",
+        "우선 요청 처리 및 엔터프라이즈급 보안"
+      ]
+    }
+  ],
+  "features": [
+    "최신 모델(GPT-5.5, GPT-5.4, GPT-5.4 mini) 사용",
+    "코드 생성과 텍스트 생성 기능",
+    "코드 리뷰와 자동 리뷰 기능",
+    "CLI, IDE, SDK 통합 지원",
+    "대규모는 물론 경량 작업을 위한 유연한 모델 선택",
+    "유연한 크레딧 기반 사용량 확장",
+    "보안 및 사용자 관리 기능 강화",
+    "다양한 환경에서 작업할 수 있는 지원 범위"
+  ],
+  "models": [
+    "GPT-5.5",
+    "GPT-5.4",
+    "GPT-5.4 mini",
+    "GPT-5.3-Codex-Spark"
+  ],
+  "supportedIDEs": [
+    "CLI",
+    "IDE 확장",
+    "웹 인터페이스"
+  ]
+}
